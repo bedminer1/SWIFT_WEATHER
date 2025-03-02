@@ -21,8 +21,16 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .padding()
                 
-                VStack {
+                VStack(spacing: 8) {
                     Image(systemName: "cloud.sun.fill")
+                        .renderingMode(.original)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 180, height: 180)
+                    
+                    Text("12°C")
+                        .font(.system(size: 70, weight: .medium))
+                        .foregroundColor(.white)
                 }
                 
                 Spacer()
