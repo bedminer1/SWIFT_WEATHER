@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		FAC338552D74B60B00A9E867 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = FAC338542D74B60400A9E867 /* .gitignore */; };
+		FAC338592D74B8F300A9E867 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FAC338582D74B8EE00A9E867 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FAC338312D746DED00A9E867 /* SwiftUI-Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC338542D74B60400A9E867 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		FAC338582D74B8EE00A9E867 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -37,6 +39,7 @@
 		FAC338282D746DED00A9E867 = {
 			isa = PBXGroup;
 			children = (
+				FAC338582D74B8EE00A9E867 /* README.md */,
 				FAC338332D746DED00A9E867 /* SwiftUI-Weather */,
 				FAC338322D746DED00A9E867 /* Products */,
 				FAC338542D74B60400A9E867 /* .gitignore */,
@@ -116,6 +119,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC338552D74B60B00A9E867 /* .gitignore in Resources */,
+				FAC338592D74B8F300A9E867 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
