@@ -7,23 +7,28 @@
 
 import SwiftUI
 
-struct DailyWeather: View {
+struct DailyWeatherData: Hashable, Codable {
     var dayOfWeek: String
     var image: String
     var temperature: String
+}
+
+struct DailyWeather: View {
+    var data: DailyWeatherData
+    
     var body: some View {
         VStack(spacing: 2) {
-            Text(dayOfWeek)
+            Text(data.dayOfWeek)
                 .font(.system(size: 16, weight: .medium))
                 .foregroundColor(.white)
             
-            Image(systemName: image)
+            Image(systemName: data.image)
                 .renderingMode(.original)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 40, height: 40)
             
-            Text(temperature)
+            Text(data.temperature)
                 .font(.system(size: 23, weight: .medium))
                 .foregroundColor(.white)
         }
@@ -31,5 +36,5 @@ struct DailyWeather: View {
 }
 
 #Preview {
-    DailyWeather(dayOfWeek: "TUE", image: "cloud.sun.fill", temperature: "12°C")
+    DailyWeather(data: .init(dayOfWeek: "Monday", image: "sun.max.fill", temperature: "25°C"))
 }
