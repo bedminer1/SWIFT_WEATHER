@@ -34,6 +34,91 @@ struct ContentView: View {
                 }
                 
                 Spacer()
+                    .frame(height: 60)
+                
+                HStack(spacing: 10) {
+                    VStack(spacing: 2) {
+                        Text("TUE")
+                            .font(.system(size: 23, weight: .medium))
+                            .foregroundColor(.white)
+                        
+                        Image(systemName: "cloud.sun.fill")
+                            .renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 50, height: 50)
+                        
+                        Text("12°C")
+                            .font(.system(size: 23, weight: .medium))
+                            .foregroundColor(.white)
+                    }
+                    
+                    VStack(spacing: 2) {
+                        Text("WED")
+                            .font(.system(size: 23, weight: .medium))
+                            .foregroundColor(.white)
+                        
+                        Image(systemName: "sun.max.fill")
+                            .renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 50, height: 50)
+                        
+                        Text("14°C")
+                            .font(.system(size: 23, weight: .medium))
+                            .foregroundColor(.white)
+                    }
+                    
+                    VStack(spacing: 2) {
+                        Text("THU")
+                            .font(.system(size: 23, weight: .medium))
+                            .foregroundColor(.white)
+                        
+                        Image(systemName: "cloud.fill")
+                            .renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 50, height: 50)
+                        
+                        Text("11°C")
+                            .font(.system(size: 23, weight: .medium))
+                            .foregroundColor(.white)
+                    }
+                    
+                    VStack(spacing: 2) {
+                        Text("FRI")
+                            .font(.system(size: 23, weight: .medium))
+                            .foregroundColor(.white)
+                        
+                        Image(systemName: "wind")
+                            .renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 50, height: 50)
+                        
+                        Text("10°C")
+                            .font(.system(size: 23, weight: .medium))
+                            .foregroundColor(.white)
+                    }
+                    
+                    VStack(spacing: 2) {
+                        Text("SAT")
+                            .font(.system(size: 23, weight: .medium))
+                            .foregroundColor(.white)
+                        
+                        Image(systemName: "cloud.sun.fill")
+                            .renderingMode(.original)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 50, height: 50)
+                        
+                        Text("13°C")
+                            .font(.system(size: 23, weight: .medium))
+                            .foregroundColor(.white)
+                    }
+                }
+                
+                Spacer()
             }
         }
     }
