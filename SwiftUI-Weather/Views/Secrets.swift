@@ -7,4 +7,4 @@
 
 import Foundation
 
-var API_KEY: String = "Hi, I'm a secret!"
+var API_KEY: String = "Hi, I'm a secret! 2"
